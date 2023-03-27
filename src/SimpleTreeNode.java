@@ -156,35 +156,4 @@ class SimpleTree<T> {
             }
         }
     }
-
-    public static void main(String[] args) {
-/*        SimpleTreeNode<Integer> root = new SimpleTreeNode<>(0, null);
-        SimpleTreeNode<Integer> node1 = new SimpleTreeNode<>(1, null);
-        SimpleTreeNode<Integer> node2 = new SimpleTreeNode<>(2, null);
-        SimpleTreeNode<Integer> node3 = new SimpleTreeNode<>(3, null);
-        SimpleTreeNode<Integer> node4 = new SimpleTreeNode<>(4, null);
-        SimpleTreeNode<Integer> node5 = new SimpleTreeNode<>(5, null);
-        SimpleTreeNode<Integer> node6 = new SimpleTreeNode<>(6, null);
-
-        SimpleTree<Integer> tree = new SimpleTree<>(root);
-
-        tree.AddChild(root, node1);
-        tree.AddChild(node1, node2);
-        tree.AddChild(node1, node3);
-        tree.AddChild(node2, node4);
-        tree.AddChild(node1, node5);
-        tree.AddChild(node2, node6);
-
-//        tree.DeleteNode(node1);
-        System.out.println(tree.LeafCount());
-//        List list = tree.GetAllNodes();
-        System.out.println(tree.Count());
-
-        tree.DeleteNode(node2);*/
-
-        SimpleTree<Integer> tree = new SimpleTree<>(null);
-        System.out.println(tree.LeafCount());
-        System.out.println(tree.Count());
-
-    }
 }
