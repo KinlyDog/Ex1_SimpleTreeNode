@@ -114,6 +114,14 @@ class SimpleTree<T> {
     }
 
     public int Count() {
+        if (Root == null) {
+            return 0;
+        }
+
+        if (Root.Children == null) {
+            return 1;
+        }
+
         List<SimpleTreeNode<T>> list = new ArrayList<>();
         CountRec(Root, list);
 
@@ -131,6 +139,10 @@ class SimpleTree<T> {
     }
 
     public int LeafCount() {
+        if (Root == null || Root.Children == null) {
+            return 0;
+        }
+
         List<SimpleTreeNode<T>> list = new ArrayList<>();
         LeafCountRec(Root, list);
 
