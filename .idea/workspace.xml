@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559a32ad-cc51-42fb-accb-67c3d64486b3" name="Changes" comment="Create project">
+    <list default="true" id="559a32ad-cc51-42fb-accb-67c3d64486b3" name="Changes" comment="Update project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleTreeNode.java" afterDir="false" />
     </list>
@@ -80,7 +80,8 @@
       <workItem from="1679408018090" duration="8254000" />
       <workItem from="1679578587185" duration="14417000" />
       <workItem from="1679842221560" duration="694000" />
-      <workItem from="1679910818401" duration="13197000" />
+      <workItem from="1679910818401" duration="18585000" />
+      <workItem from="1680011354425" duration="2632000" />
     </task>
     <task id="LOCAL-00001" summary="Create project">
       <created>1679927941601</created>
@@ -89,7 +90,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679927941601</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update project">
+      <created>1679928581492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679928581492</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update project">
+      <created>1679928612022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679928612022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,17 +112,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create project" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SimpleTreeNode.java</url>
-          <line>178</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Update project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update project" />
   </component>
 </project>
