@@ -81,7 +81,7 @@
       <workItem from="1679578587185" duration="14417000" />
       <workItem from="1679842221560" duration="694000" />
       <workItem from="1679910818401" duration="18585000" />
-      <workItem from="1680011354425" duration="2632000" />
+      <workItem from="1680011354425" duration="4245000" />
     </task>
     <task id="LOCAL-00001" summary="Create project">
       <created>1679927941601</created>
@@ -104,15 +104,40 @@
       <option name="project" value="LOCAL" />
       <updated>1679928612022</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Update project">
+      <created>1680014124009</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680014124009</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
     <MESSAGE value="Update project" />
     <option name="LAST_COMMIT_MESSAGE" value="Update project" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="tree.Root.Children.get(0)" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

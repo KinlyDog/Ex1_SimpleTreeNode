@@ -4,11 +4,13 @@ public class SimpleTreeNode<T> {
     public T NodeValue;
     public SimpleTreeNode<T> Parent;
     public List<SimpleTreeNode<T>> Children;
+    public int Level;
 
     public SimpleTreeNode(T val, SimpleTreeNode<T> parent) {
         NodeValue = val;
         Parent = parent;
         Children = null;
+        Level = -1;
     }
 }
 
@@ -121,9 +123,9 @@ class SimpleTree<T> {
             return 1;
         }
 
-        List<SimpleTreeNode<T>> allNodes = GetAllNodes();
+        List<SimpleTreeNode<T>> allNodes  = GetAllNodes();
 
-        return allNodes.size();
+        return allNodes .size();
     }
 
     // ok
@@ -136,10 +138,10 @@ class SimpleTree<T> {
             return 1;
         }
 
-        List<SimpleTreeNode<T>> leafCount = new ArrayList<>();
-        LeafCountRec(Root, leafCount);
+        List<SimpleTreeNode<T>> allNodes = new ArrayList<>();
+        LeafCountRec(Root, allNodes);
 
-        return leafCount.size();
+        return allNodes.size();
     }
 
     public void LeafCountRec(SimpleTreeNode<T> Node, List<SimpleTreeNode<T>> list) {
@@ -148,6 +150,30 @@ class SimpleTree<T> {
                 list.add(node);
             } else {
                 LeafCountRec(node, list);
+            }
+        }
+    }
+
+    public void SetLevel() {
+        if (Root == null) {
+            return;
+        }
+
+        Root.Level = 0;
+
+        if (Root.Children == null) {
+            return;
+        }
+
+        SetLevelRec(Root.Children,1);
+    }
+
+    public void SetLevelRec(List <SimpleTreeNode<T>> nodeChildren, int count) {
+        for (SimpleTreeNode<T> node : nodeChildren) {
+            node.Level = count;
+
+            if (node.Children != null) {
+                SetLevelRec(node.Children, count + 1);
             }
         }
     }
