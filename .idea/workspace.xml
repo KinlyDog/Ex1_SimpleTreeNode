@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="559a32ad-cc51-42fb-accb-67c3d64486b3" name="Changes" comment="Update project">
+    <list default="true" id="559a32ad-cc51-42fb-accb-67c3d64486b3" name="Changes" comment="Add method EvenTrees()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SimpleTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleTreeNode.java" afterDir="false" />
     </list>
@@ -39,11 +39,15 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java/7. Алгоритмы и структуры данных ч.2/Ex1_SimpleTreeNode&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -81,7 +85,25 @@
       <workItem from="1679578587185" duration="14417000" />
       <workItem from="1679842221560" duration="694000" />
       <workItem from="1679910818401" duration="18585000" />
-      <workItem from="1680011354425" duration="4245000" />
+      <workItem from="1680011354425" duration="5299000" />
+      <workItem from="1680190890403" duration="648000" />
+      <workItem from="1680271441376" duration="75000" />
+      <workItem from="1680272494396" duration="7000" />
+      <workItem from="1680368029807" duration="40000" />
+      <workItem from="1680369023476" duration="218000" />
+      <workItem from="1680440957105" duration="11000" />
+      <workItem from="1680890406206" duration="89000" />
+      <workItem from="1680957251661" duration="40000" />
+      <workItem from="1680980335847" duration="1696000" />
+      <workItem from="1684160057156" duration="1099000" />
+      <workItem from="1684207863106" duration="60000" />
+      <workItem from="1684288089329" duration="295000" />
+      <workItem from="1684294335502" duration="1901000" />
+      <workItem from="1684381733778" duration="1346000" />
+      <workItem from="1684392777368" duration="596000" />
+      <workItem from="1684409081741" duration="1102000" />
+      <workItem from="1684411804915" duration="452000" />
+      <workItem from="1684412265444" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="Create project">
       <created>1679927941601</created>
@@ -111,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680014124009</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add method SetLevel()">
+      <created>1680015794060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680015794060</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,13 +160,24 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create project" />
     <MESSAGE value="Update project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update project" />
+    <MESSAGE value="Add method SetLevel()" />
+    <MESSAGE value="Add method EvenTrees()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method EvenTrees()" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="tree.Root.Children.get(0)" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SimpleTreeNode.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="SimpleTreeNode" memberName="NodeValue" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

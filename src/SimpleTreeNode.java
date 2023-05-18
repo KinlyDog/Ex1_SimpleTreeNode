@@ -123,9 +123,9 @@ class SimpleTree<T> {
             return 1;
         }
 
-        List<SimpleTreeNode<T>> allNodes  = GetAllNodes();
+        List<SimpleTreeNode<T>> allNodes = GetAllNodes();
 
-        return allNodes .size();
+        return allNodes.size();
     }
 
     // ok
@@ -165,10 +165,10 @@ class SimpleTree<T> {
             return;
         }
 
-        SetLevelRec(Root.Children,1);
+        SetLevelRec(Root.Children, 1);
     }
 
-    public void SetLevelRec(List <SimpleTreeNode<T>> nodeChildren, int count) {
+    public void SetLevelRec(List<SimpleTreeNode<T>> nodeChildren, int count) {
         for (SimpleTreeNode<T> node : nodeChildren) {
             node.Level = count;
 
@@ -177,4 +177,38 @@ class SimpleTree<T> {
             }
         }
     }
+
+    public ArrayList<T> EvenTrees() {
+        ArrayList<T> resultList = new ArrayList<>();
+
+        if (Root == null) {
+            return resultList;
+        }
+
+        // Вызываем вспомогательный рекурсивный метод для обхода дерева
+        EvenTreesRec(Root, resultList);
+
+        return resultList;
+    }
+
+    private int EvenTreesRec(SimpleTreeNode<T> currentNode, ArrayList<T> resultList) {
+        if (currentNode.Children == null) {
+            return 1; // Листовой узел считается как дерево с 1 вершиной
+        }
+
+        int count = 0;
+        for (SimpleTreeNode<T> child : currentNode.Children) {
+            int childCount = EvenTreesRec(child, resultList);
+            count += childCount;
+
+            // Если количество вершин в поддереве четное, удаляем ребро
+            if (childCount % 2 == 0 && currentNode != Root) {
+                resultList.add(currentNode.NodeValue);
+                resultList.add(child.NodeValue);
+            }
+        }
+
+        return count + 1; // Учитываем текущий узел
+    }
 }
+
