@@ -185,30 +185,27 @@ class SimpleTree<T> {
             return resultList;
         }
 
-        // Вызываем вспомогательный рекурсивный метод для обхода дерева
         EvenTreesRec(Root, resultList);
 
         return resultList;
     }
 
     private int EvenTreesRec(SimpleTreeNode<T> currentNode, ArrayList<T> resultList) {
-        if (currentNode.Children == null) {
-            return 1; // Листовой узел считается как дерево с 1 вершиной
-        }
-
         int count = 0;
-        for (SimpleTreeNode<T> child : currentNode.Children) {
-            int childCount = EvenTreesRec(child, resultList);
-            count += childCount;
 
-            // Если количество вершин в поддереве четное, удаляем ребро
-            if (childCount % 2 == 0 && currentNode != Root) {
-                resultList.add(currentNode.NodeValue);
-                resultList.add(child.NodeValue);
+        if (currentNode.Children != null) {
+            for (SimpleTreeNode<T> child : currentNode.Children) {
+                int childCount = EvenTreesRec(child, resultList);
+                count += childCount;
+
+                if (childCount % 2 == 0) {
+                    resultList.add(currentNode.NodeValue);
+                    resultList.add(child.NodeValue);
+                }
             }
         }
 
-        return count + 1; // Учитываем текущий узел
+        return count + 1;
     }
 }
 
