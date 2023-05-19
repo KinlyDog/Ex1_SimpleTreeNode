@@ -193,15 +193,17 @@ class SimpleTree<T> {
     private int EvenTreesRec(SimpleTreeNode<T> currentNode, ArrayList<T> resultList) {
         int count = 0;
 
-        if (currentNode.Children != null) {
-            for (SimpleTreeNode<T> child : currentNode.Children) {
-                int childCount = EvenTreesRec(child, resultList);
-                count += childCount;
+        if (currentNode.Children == null) {
+            return 1;
+        }
 
-                if (childCount % 2 == 0) {
-                    resultList.add(currentNode.NodeValue);
-                    resultList.add(child.NodeValue);
-                }
+        for (SimpleTreeNode<T> child : currentNode.Children) {
+            int childCount = EvenTreesRec(child, resultList);
+            count += childCount;
+
+            if (childCount % 2 == 0) {
+                resultList.add(currentNode.NodeValue);
+                resultList.add(child.NodeValue);
             }
         }
 
