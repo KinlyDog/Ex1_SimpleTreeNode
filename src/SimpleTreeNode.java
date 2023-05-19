@@ -191,10 +191,10 @@ class SimpleTree<T> {
     }
 
     private int EvenTreesRec(SimpleTreeNode<T> currentNode, ArrayList<T> resultList) {
-        int count = 0;
+        int count = 1;
 
         if (currentNode.Children == null) {
-            return 1;
+            return count;
         }
 
         for (SimpleTreeNode<T> child : currentNode.Children) {
@@ -207,7 +207,7 @@ class SimpleTree<T> {
             }
         }
 
-        return count + 1;
+        return count;
     }
 }
 
